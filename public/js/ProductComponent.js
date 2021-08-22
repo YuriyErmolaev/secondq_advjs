@@ -22,7 +22,7 @@ Vue.component('products', {
             this.filtered = this.products.filter(el => regexp.test(el.product_name));
         }
     },
-   template: `<div class="products">
+   template: `<div class="products featuredItemsBlock">
                 <product v-for="item of filtered" 
                 :key="item.id_product" 
                 :img="imgProduct"
@@ -32,14 +32,34 @@ Vue.component('products', {
 });
 Vue.component('product', {
     props: ['product', 'img'],
-    template: `
-            <div class="product-item">
-                <img :src="product.img ? product.img : img" alt="Some img">
-                <div class="desc">
-                    <h3>{{product.product_name}}</h3>
-                    <p>{{product.price}}</p>
-                    <button class="buy-btn" @click="$emit('add-product', product)">Купить</button>
+    template:
+        `<div class="featureItem">
+            <a class="featureItemLink" href="product_detail.html">
+                <div class="featureItemImgBlock featureImg1"
+                    :style="{ 'background-image': 'url(' + (product.img ?? img) + ')' }"
+                ></div>
+                <div class="featureItemInfoBlock">
+                    <div class="featureItemTitleBlock">{{product.product_name}}</div>
+                    <div class="featureItemPriceBlock">$ {{product.price}}</div>
                 </div>
+            </a>
+            <div class="addTobasketLinkWrap">
+                <a class="addTobasketLink buy-btn button" href="#" @click="$emit('add-product', product)">
+                    <img class="whiteBasketIcon" src="img/whiteBasketIcon.png" alt="white basket icon">
+                        Add to Cart
+                </a>
             </div>
-    `
+        </div>`
+
+
+    //     `
+    //         <div class="product-item">
+    //             <img :src="product.img ? product.img : img" alt="Some img">
+    //             <div class="desc">
+    //                 <h3>{{product.product_name}}</h3>
+    //                 <p>{{product.price}}</p>
+    //                 <button class="buy-btn" @click="$emit('add-product', product)">Купить</button>
+    //             </div>
+    //         </div>
+    // `
 })

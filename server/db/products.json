@@ -1,31 +1,50 @@
 [
   {
-    "id_product": 124,
-    "product_name": "Keyboard",
-    "price": 1700,
-    "img": "/imgs/keyb.jpg"
+    "id_product": 1,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg1.png"
   },
   {
-    "id_product": 457,
-    "product_name": "Gamepad",
-    "price": 3000,
-    "img": "/imgs/gamp.jpg"
+    "id_product": 2,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg2.png"
   },
   {
-    "id_product": 123,
-    "product_name": "Ноутбук",
-    "price": 45600,
-    "img": "/imgs/note.jpg"
+    "id_product": 3,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg3.png"
   },
   {
-    "id_product": 456,
-    "product_name": "Мышка",
-    "price": 1000,
-    "img": "/imgs/mouse.jpg"
+    "id_product": 4,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg4.png"
   },
   {
-    "id_product": 458,
-    "product_name": "Вентилятор",
-    "price": 800
+    "id_product": 5,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg5.png"
+  },
+  {
+    "id_product": 6,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg6.png"
+  },
+  {
+    "id_product": 7,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg7.png"
+  },
+  {
+    "id_product": 8,
+    "product_name": "Mango  People  T-shirt",
+    "price": 52,
+    "img": "/img/featureImg8.png"
   }
 ]
