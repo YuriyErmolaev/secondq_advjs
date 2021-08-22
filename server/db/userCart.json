@@ -4,40 +4,6 @@
     "contents": [
         {
             "quantity": 1,
-            "id_product": 124,
-            "product_name": "Keyboard",
-            "price": 1700,
-            "img": "/imgs/keyb.jpg"
-        },
-        {
-            "quantity": 2,
-            "id_product": 457,
-            "product_name": "Gamepad",
-            "price": 3000,
-            "img": "/imgs/gamp.jpg"
-        },
-        {
-            "quantity": 1,
-            "id_product": 123,
-            "product_name": "Ноутбук",
-            "price": 45600,
-            "img": "/imgs/note.jpg"
-        },
-        {
-            "quantity": 1,
-            "id_product": 456,
-            "product_name": "Мышка",
-            "price": 1000,
-            "img": "/imgs/mouse.jpg"
-        },
-        {
-            "quantity": 1,
-            "id_product": 458,
-            "product_name": "Вентилятор",
-            "price": 800
-        },
-        {
-            "quantity": 1,
             "id_product": 1,
             "product_name": "Mango  People  T-shirt",
             "price": 52,

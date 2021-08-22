@@ -140,7 +140,6 @@ body .mainSubMenusBlock {
 
 body header .mainSubMenusBlock, body header .subMenuArrow {
   opacity: 0;
-  display: none;
 }
 
 body details .mainSubMenusBlock {

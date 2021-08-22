@@ -63,30 +63,55 @@ Vue.component('cart', {
                 })
         },
     },
-    template: `<div>
-                    <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
-                    <div class="cart-block" v-show="showCart">
-                        <ul class="subMenu">
-                            <cart-item 
-                                v-for="item of cartItems" 
-                                :key="item.id_product" 
-                                :img="imgCart" 
-                                :cart-item="item" 
-                                @remove="remove">
-                            </cart-item>
-                        </ul>
-                     </div>
+    template: `
+                <div class="topBasketWrap">
+                    <a href="#" class="topBasket btn-cart" type="button" @click="showCart = !showCart">
+                        <img src="img/basketIcon.png" alt="miniBasket">
+                    </a>
+                    <div class="subMenuArrow" v-show="showCart"></div>
+                    <nav class="mainSubMenusBlock" v-show="showCart">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <!--<button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>-->
+                                <!--<div class="cart-block" v-show="showCart">-->
+                                <div class="cart-block"
+                                    <ul class="subMenu">
+                                        <cart-item 
+                                            v-for="item of cartItems" 
+                                            :key="item.id_product" 
+                                            :img="imgCart" 
+                                            :cart-item="item" 
+                                            @remove="remove">
+                                        </cart-item>
+                                    </ul>
+                                </div>
+                            </div>        
+                            <ul class="subMenu">
+                                <li class="miniCartTotalItem">
+                                    <div class="totalBlock">
+                                        <div>TOTAL</div>
+                                        <div>$500.00</div>
+                                    </div>
+                                    <a href="checkout.html" class="checkout button">Checkout</a>
+                                    <a href="cart.html" class="goToCart button">Go to cart</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                    </nav>
                 </div>
-    `
+                `
+
+
 });
 
 Vue.component('cart-item', {
     props: ['img', 'cartItem'],
     template:`<li class="miniCartItem">
-                    <a 
-                        href="product_detail.html" 
+                    <a href="product_detail.html" 
                         class="miniCartItemImgBlock miniCartItemImgBlock1"
-                        :style="{ 'background-image': 'url(' + (cartItem.img ?? img) + ')' }"
+                        :style="{ 'background-image': 'url(/storage/images/products/' + (cartItem.id_product) + '.png)' }">
                     </a>
                     <div class="miniCartItemInfoBlock">
                         <div class="name">{{ cartItem.product_name }}</div>
