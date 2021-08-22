@@ -66,13 +66,15 @@ Vue.component('cart', {
     template: `<div>
                     <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
                     <div class="cart-block" v-show="showCart">
-                        <cart-item 
-                            v-for="item of cartItems" 
-                            :key="item.id_product" 
-                            :img="imgCart" 
-                            :cart-item="item" 
-                            @remove="remove">
-                        </cart-item>
+                        <ul class="subMenu">
+                            <cart-item 
+                                v-for="item of cartItems" 
+                                :key="item.id_product" 
+                                :img="imgCart" 
+                                :cart-item="item" 
+                                @remove="remove">
+                            </cart-item>
+                        </ul>
                      </div>
                 </div>
     `
@@ -80,20 +82,39 @@ Vue.component('cart', {
 
 Vue.component('cart-item', {
     props: ['img', 'cartItem'],
-    template: `
-    <div class="cart-item">
-                    <div class="product-bio">
-                        <img :src="cartItem.img ? cartItem.img : img" alt="Some img">
-                        <div class="product-desc">
-                            <div class="product-title">{{ cartItem.product_name }}</div>
-                            <div class="product-quantity">Quantity: {{ cartItem.quantity }}</div>
-                            <div class="product-single-price">$ {{ cartItem.price }} each</div>
+    template:`<li class="miniCartItem">
+                    <a 
+                        href="product_detail.html" 
+                        class="miniCartItemImgBlock miniCartItemImgBlock1"
+                        :style="{ 'background-image': 'url(' + (cartItem.img ?? img) + ')' }"
+                    </a>
+                    <div class="miniCartItemInfoBlock">
+                        <div class="name">{{ cartItem.product_name }}</div>
+                        <div class="mark">
+                            <img src="img/markStars.png" alt="markStars">
+                        </div>
+                        <div class="numberAndPrive del-btn">
+                            {{ cartItem.quantity }} x $ {{ cartItem.price }} = $ {{cartItem.quantity*cartItem.price}}
                         </div>
                     </div>
-                    <div class="right-block">
-                        <div class="product-price">{{cartItem.quantity*cartItem.price}}</div>
-                        <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
+                    <div class="miniCartItemDeleteBlock" @click="$emit('remove', cartItem)">
+                        <img class="crossIcon" src="img/crossIcon.png" alt="cross">
                     </div>
-                </div>
-    `
+                </li>`
+
+
+        // `<div class="cart-item">
+        //             <div class="product-bio">
+        //                 <img :src="cartItem.img ? cartItem.img : img" alt="Some img">
+        //                 <div class="product-desc">
+        //                     <div class="product-title">{{ cartItem.product_name }}</div>
+        //                     <div class="product-quantity">Quantity: {{ cartItem.quantity }}</div>
+        //                     <div class="product-single-price">$ {{ cartItem.price }} each</div>
+        //                 </div>
+        //             </div>
+        //             <div class="right-block">
+        //                 <div class="product-price">{{cartItem.quantity*cartItem.price}}</div>
+        //                 <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
+        //             </div>
+        //         </div>`
 })

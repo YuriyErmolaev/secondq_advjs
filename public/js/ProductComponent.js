@@ -36,7 +36,7 @@ Vue.component('product', {
         `<div class="featureItem">
             <a class="featureItemLink" href="product_detail.html">
                 <div class="featureItemImgBlock featureImg1"
-                    :style="{ 'background-image': 'url(' + (product.img ?? img) + ')' }"
+                    :style="{ 'background-image': 'url(/storage/images/products/' + (product.id_product) + '.png)' }"
                 ></div>
                 <div class="featureItemInfoBlock">
                     <div class="featureItemTitleBlock">{{product.product_name}}</div>
