@@ -44,10 +44,10 @@ Vue.component('product', {
                 </div>
             </a>
             <div class="addTobasketLinkWrap">
-                <a class="addTobasketLink buy-btn button" href="#" @click="$emit('add-product', product)">
+                <button class="addTobasketLink buy-btn button" @click="$emit('add-product', product)">
                     <img class="whiteBasketIcon" src="img/whiteBasketIcon.png" alt="white basket icon">
                         Add to Cart
-                </a>
+                </button>
             </div>
         </div>`
 
