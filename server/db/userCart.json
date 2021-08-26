@@ -9,10 +9,10 @@
             "price": 52
         },
         {
-            "quantity": 6,
-            "id_product": 4,
-            "product_name": "Mango4  People  T-shirt",
-            "price": 70
+            "quantity": 5,
+            "id_product": 2,
+            "product_name": "Mango2 girl People  T-shirt",
+            "price": 60
         }
     ]
 }
