@@ -1,0 +1,42 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Mango1 boy People T-shirt",
+    "price": 52
+  },
+  {
+    "id_product": 2,
+    "product_name": "Mango2 girl People  T-shirt",
+    "price": 60
+  },
+  {
+    "id_product": 3,
+    "product_name": "Mango3 boy People T-shirt",
+    "price": 55
+  },
+  {
+    "id_product": 4,
+    "product_name": "Mango4 girl People T-shirt",
+    "price": 70
+  },
+  {
+    "id_product": 5,
+    "product_name": "Mango5 girl People T-shirt",
+    "price": 75
+  },
+  {
+    "id_product": 6,
+    "product_name": "Mango6 boy People T-shirt",
+    "price": 44
+  },
+  {
+    "id_product": 7,
+    "product_name": "Mango7 boy People T-shirt",
+    "price": 50
+  },
+  {
+    "id_product": 8,
+    "product_name": "Mango8 boy People T-shirt",
+    "price": 38
+  }
+]

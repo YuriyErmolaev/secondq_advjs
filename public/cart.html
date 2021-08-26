@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brand New Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9412d2868b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SASS/style.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="top">
+        <div class="container topContainer">
+            <div class="topLeft">
+                <a href="index.html" class="logoBlock">
+                    <img src="img/logoIcon.png" alt="logo">
+                    <div class="logoText">
+                        BRAN<span class="attentionText">D</span>
+                    </div>
+                </a>
+
+                <form action="#" class="searchBlock">
+                    <details>
+                        <summary class="button searchSelect">Browse &#9660;</summary>
+                        <div class="subMenuArrow"></div>
+                        <nav class="mainSubMenusBlock">
+                            <div class="subMenuBox">
+                                <div class="subMenuBoxTextInfo">
+                                    <div class="subMenuBoxTitle">COMPANY</div>
+                                    <ul class="subMenu">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">How It Works</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">How It Works</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="subMenuBox">
+                                <div class="subMenuBoxTextInfo">
+                                    <div class="subMenuBoxTitle">INFORMATION</div>
+                                    <ul class="subMenu">
+                                        <li><a href="#">Tearms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">How to Buy</a></li>
+                                        <li><a href="#">How to Sell</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </details>
+                    <input type="text" class="searchInputTest" placeholder="Search for item...">
+                    <button class="searchSubmit" type="submit">
+                        <img src="img/loupeIcon.png" alt="loupe">
+                    </button>
+                </form>
+
+            </div>
+            <div class="topRight">
+                <div class="accountTopBlock">
+                    <div class="topBasketWrap">
+                        <a href="#" class="topBasket">
+                            <img src="img/basketIcon.png" alt="miniBasket">
+                        </a>
+                        <div class="subMenuArrow"></div>
+                        <nav class="mainSubMenusBlock">
+                            <div class="subMenuBox">
+                                <div class="subMenuBoxTextInfo">
+                                    <ul class="subMenu">
+                                        <li class="miniCartItem">
+                                            <a href="product_detail.html" class="miniCartItemImgBlock miniCartItemImgBlock1"></a>
+                                            <div class="miniCartItemInfoBlock">
+                                                <div class="name">Rebox Zane</div>
+                                                <div class="mark">
+                                                    <img src="img/markStars.png" alt="markStars">
+                                                </div>
+                                                <div class="numberAndPrive">
+                                                    1  x   $250
+                                                </div>
+                                            </div>
+                                            <div class="miniCartItemDeleteBlock">
+                                                <img class="crossIcon" src="img/crossIcon.png" alt="cross">
+                                            </div>
+                                        </li>
+                                        <li class="miniCartItem">
+                                            <a href="product_detail.html" class="miniCartItemImgBlock miniCartItemImgBlock2"></a>
+                                            <div class="miniCartItemInfoBlock">
+                                                <div class="name">Rebox Zane</div>
+                                                <div class="mark">
+                                                    <img src="img/markStars.png" alt="markStars">
+                                                </div>
+                                                <div class="numberAndPrive">
+                                                    1  x   $250
+                                                </div>
+                                            </div>
+                                            <div class="miniCartItemDeleteBlock">
+                                                <img class="crossIcon" src="img/crossIcon.png" alt="cross">
+                                            </div>
+                                        </li>
+                                        <li class="miniCartTotalItem">
+                                            <div class="totalBlock">
+                                                <div>TOTAL</div>
+                                                <div>$500.00</div>
+                                            </div>
+                                            <a href="checkout.html" class="checkout button">Checkout</a>
+                                            <a href="cart.html" class="goToCart button">Go to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+                    <details>
+                        <summary class="button accountSelect">My Account &#9660;</summary>
+                        <div class="subMenuArrow"></div>
+                        <nav class="mainSubMenusBlock">
+                            <div class="subMenuBox">
+                                <div class="subMenuBoxTextInfo">
+                                    <ul class="subMenu">
+                                        <li><a href="#">Orders</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navigate">
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a class="active" href="#">Man</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a href="#">Accoseriese</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a href="#">Featured</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+                <li>
+                    <a href="#">Hot Deals</a>
+                    <div class="subMenuArrow"></div>
+                    <nav class="mainSubMenusBlock">
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">COMPANY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">INFORMATION</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                    <li><a href="#">Tearms & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">How to Buy</a></li>
+                                    <li><a href="#">How to Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="subMenuBox">
+                            <div class="subMenuBoxTextInfo">
+                                <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                                <ul class="subMenu">
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Child</a></li>
+                                    <li><a href="#">Apparel</a></li>
+                                </ul>
+                            </div>
+                            <a class="menuOfferBlock" href="#">
+                                <img class="menuOfferImg" src="img/menuOfferImg.png" alt="menu offer">
+                                <div class="menuOfferText">Super sale!</div>
+                            </a>
+                        </div>
+
+                    </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="firstLine">
+
+    <div class="container firstLineContainer">
+
+        <h1 class="mainTitle">New Arrivals </h1>
+
+        <ul class="breadCrumbs">
+            <li class="breadCrumbsItem" ><a href="index.html">Home</a></li>
+            <li class="breadCrumbsItem"><a href="#">Cart</a></li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<main class="mainCartBlock">
+    <div class="container mainCartBlockContainer">
+
+        <section class="cartProductsListSection">
+
+            <div class="cartItemsTitles">
+                <div class="cartItemsTitlesProductDetails">Product Details</div>
+                <div class="cartItemsTitlesunitePrice">unite Price</div>
+                <div class="cartItemsTitlesQuantity">Quantity</div>
+                <div class="cartItemsTitlesShipping">shipping</div>
+                <div class="cartItemsTitlesSubtotal">Subtotal</div>
+                <div class="cartItemsTitlesAction">ACTION</div>
+            </div>
+
+            <div class="cartItem">
+                <div class="cartItemProductDetails cartItemCell">
+                    <div class="featureItemLink ProductDetailsImgBlock">
+                        <a href="product.html" class="featureItemImgBlock featureImg5 ProductDetailsImg"></a>
+                    </div>
+                    <div class="featureItemInfoBlock ProductDetailsInfo">
+                        <div class="featureItemTitleBlock">Mango  People  T-shirt</div>
+                        <div class="featureItemParamsBlock">
+                            <div class="param colorParam">
+                                <span class="paramName bold">Color: </span>
+                                <span class="paramValue">Red</span>
+                            </div>
+                            <div class="param sizeParam">
+                                <span class="paramName bold">Size: </span>
+                                <span class="paramValue">Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartItemUnitePrice  cartItemCell">
+                    $150
+                </div>
+                <div class="cartItemQuantity  cartItemCell">
+                    <input type="number" value="2">
+                </div>
+                <div class="cartItemShipping  cartItemCell">
+                    FREE
+                </div>
+                <div class="cartItemSubtotal  cartItemCell">
+                    $300
+                </div>
+                <div class="cartItemAction  cartItemCell">
+                    <div class="miniCartItemDeleteBlock">
+                        <img class="crossIcon" src="img/crossIcon.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+            <div class="cartItem">
+                <div class="cartItemProductDetails cartItemCell">
+                    <div class="featureItemLink ProductDetailsImgBlock">
+                        <a href="product.html" class="featureItemImgBlock featureImg5 ProductDetailsImg"></a>
+                    </div>
+                    <div class="featureItemInfoBlock ProductDetailsInfo">
+                        <div class="featureItemTitleBlock">Mango  People  T-shirt</div>
+                        <div class="featureItemParamsBlock">
+                            <div class="param colorParam">
+                                <span class="paramName bold">Color: </span>
+                                <span class="paramValue">Red</span>
+                            </div>
+                            <div class="param sizeParam">
+                                <span class="paramName bold">Size: </span>
+                                <span class="paramValue">Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartItemUnitePrice  cartItemCell">
+                    $150
+                </div>
+                <div class="cartItemQuantity  cartItemCell">
+                    <input type="number" value="2">
+                </div>
+                <div class="cartItemShipping  cartItemCell">
+                    FREE
+                </div>
+                <div class="cartItemSubtotal  cartItemCell">
+                    $300
+                </div>
+                <div class="cartItemAction  cartItemCell">
+                    <div class="miniCartItemDeleteBlock">
+                        <img class="crossIcon" src="img/crossIcon.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+            <div class="cartItem">
+                <div class="cartItemProductDetails cartItemCell">
+                    <div class="featureItemLink ProductDetailsImgBlock">
+                        <a href="product.html" class="featureItemImgBlock featureImg5 ProductDetailsImg"></a>
+                    </div>
+                    <div class="featureItemInfoBlock ProductDetailsInfo">
+                        <div class="featureItemTitleBlock">Mango  People  T-shirt</div>
+                        <div class="featureItemParamsBlock">
+                            <div class="param colorParam">
+                                <span class="paramName bold">Color: </span>
+                                <span class="paramValue">Red</span>
+                            </div>
+                            <div class="param sizeParam">
+                                <span class="paramName bold">Size: </span>
+                                <span class="paramValue">Xll</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartItemUnitePrice  cartItemCell">
+                    $150
+                </div>
+                <div class="cartItemQuantity  cartItemCell">
+                    <input type="number" value="2">
+                </div>
+                <div class="cartItemShipping  cartItemCell">
+                    FREE
+                </div>
+                <div class="cartItemSubtotal  cartItemCell">
+                    $300
+                </div>
+                <div class="cartItemAction  cartItemCell">
+                    <div class="miniCartItemDeleteBlock">
+                        <img class="crossIcon" src="img/crossIcon.png" alt="cross">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartButtonsBlock flex space-between">
+                <button class="button_normal button_empty uppercase bold">cLEAR SHOPPING CART</button>
+                <button class="button_normal button_empty uppercase bold">cONTINUE sHOPPING</button>
+            </div>
+
+        </section>
+
+        <section class="cartFormSection flex space-between">
+            <div class="cartFormFieldsBlock ShippingAdressBlock flex column">
+                <h6 class="uppercase bold">Shipping Adress</h6>
+                <select>
+                    <option selected>Bangladesh</option>
+                    <option >Abakan</option>
+                </select>
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button class="button_normal button_empty uppercase bold">get a quote</button>
+            </div>
+            <div class="cartFormFieldsBlock couponDiscountBlock flex column">
+                <h6 class="uppercase bold">coupon  discount</h6>
+                <label for="coupon">Enter your coupon code if you have one</label>
+                <input type="text" placeholder="Coupon" id="coupon">
+                <button class="button_normal button_empty uppercase bold">Apply coupon</button>
+            </div>
+            <div class="totalBlockBigCart flex column">
+                <div class="sumBlock uppercase">
+                    <div class="sumLine totalSum">
+                        <span class="sumName">Sub total </span>
+                        <span class="sumNum">$900</span>
+                    </div>
+                    <div class="sumLine grandSum">
+                        <span class="sumName">GRAND TOTAL </span>
+                        <span class="sumNum">$900</span>
+                    </div>
+                </div>
+                <button class="cartSubmitButton uppercase bold" type="submit">proceed to checkout</button>
+            </div>
+        </section>
+
+
+    </div>
+</main>
+
+
+
+<section class="preFooter">
+    <div class="container preFooterContainer">
+        <div class="quoteBlockWrap">
+            <div class="quoteBlock">
+                <figure class="infoIconBlock commentItem">
+                    <div class="iconQuote iconLeftBlock">
+                        <img src="img/BinBurhanIcon.png" alt="author icon" />
+                    </div>
+                    <div class="infoQuote infoRightBlock">
+                        <span class="italicText">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                        </span>
+                        <figcaption>
+                            <div class="infoQuoteName attentionText">
+                                Bin Burhan
+                            </div>
+                            <div class="whereFrom">
+                                Dhaka, Bd
+                            </div>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <div class="commentCheckerBlock checkerBlock">
+                    <div class="commentCheckerItem checkerItem"></div>
+                    <div class="commentCheckerItem checkerItem checkerItemActive"></div>
+                    <div class="commentCheckerItem checkerItem"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="subscribeBlock">
+
+            <div class="subscribeBlockTitle">Subscribe</div>
+            <div class="subscribeBlockAnnotation">FOR OUR NEWLETTER AND PROMOTION</div>
+            <form action="#" class="subscribeForm">
+                <input class="subscribeFormEmailInput" type="email" required placeholder="Enter Your Email">
+                <button class="subscribeFormSubmitButton" type="submit">Subscribe</button>
+            </form>
+
+
+
+        </div>
+
+
+    </div>
+</section>
+
+<footer>
+
+    <div class="mainBlockFooter">
+        <div class="container mainBlockFooterContainer">
+            <article class="footerArticle">
+                <a href="index.html" class="logoBlock">
+                    <img src="img/logoIcon.png" alt="logo">
+                    <div class="logoText">
+                        BRAN<span class="attentionText">D</span>
+                    </div>
+                </a>
+                <p class="footerParagraph">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                </p>
+                <p class="footerParagraph">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+
+            </article>
+            <nav class="mainSubMenusBlock">
+                <div class="subMenuBox">
+                    <div class="subMenuBoxTitle">COMPANY</div>
+                    <ul class="subMenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="subMenuBox">
+                    <div class="subMenuBoxTitle">INFORMATION</div>
+                    <ul class="subMenu">
+                        <li><a href="#">Tearms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">How to Sell</a></li>
+                        <li><a href="#">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="subMenuBox">
+                    <div class="subMenuBoxTitle">SHOP CATEGORY</div>
+                    <ul class="subMenu">
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Child</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Brows All</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="reserved">
+        <div class="container reservedContainer">
+
+            <div class="reservedText">
+                © 2017  Brand  All Rights Reserved.
+            </div>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/" class="button socialItem" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" class="button socialItem" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" class="button socialItem" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.pinterest.ru/" class="button socialItem" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://plus.google.com/" class="button socialItem" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
